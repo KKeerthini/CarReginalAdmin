@@ -1,6 +1,7 @@
 package com.android.car.carreginaladmin.login;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,7 +13,8 @@ import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.android.car.carreginaladmin.R;
-import com.android.car.carreginaladmin.login.delaership.DealerRecyclerAdapter;
+import com.android.car.carreginaladmin.login.dealership.DealerRecyclerAdapter;
+import com.android.car.carreginaladmin.login.jobrole.JobRoleActivity;
 import com.android.car.carreginaladmin.login.pojo.DealerListModel;
 
 import java.util.ArrayList;
@@ -83,6 +85,10 @@ public class DealerListActivity extends AppCompatActivity implements SearchView.
             @Override
             public void onClick(View view, int position) {
                 Toast.makeText(DealerListActivity.this, metGuideLines.get(position).getDealerNames(), Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(DealerListActivity.this, JobRoleActivity.class);
+                intent.putExtra("dealerName",metGuideLines.get(position).getDealerNames());
+                intent.putExtra("dealerNo",metGuideLines.get(position).getDealerNumber());
+                startActivity(intent);
             }
 
             @Override

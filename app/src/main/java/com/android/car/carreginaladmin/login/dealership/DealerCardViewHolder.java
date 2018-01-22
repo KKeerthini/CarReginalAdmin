@@ -1,4 +1,4 @@
-package com.android.car.carreginaladmin.login.delaership;
+package com.android.car.carreginaladmin.login.dealership;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

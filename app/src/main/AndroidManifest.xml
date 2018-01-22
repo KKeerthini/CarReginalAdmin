@@ -25,6 +25,7 @@
         </activity>
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".login.DealerListActivity"></activity>
+        <activity android:name=".login.jobrole.JobRoleActivity"></activity>
     </application>
 
 </manifest>

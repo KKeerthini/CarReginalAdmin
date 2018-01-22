@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
@@ -39,9 +37,9 @@ public class PiechartActivity extends AppCompatActivity implements OnChartValueS
         // xIndex (even if from different DataSets), since no values can be
         // drawn above each other.
         ArrayList<Entry> yvalues = new ArrayList<Entry>();
-        yvalues.add(new Entry(52f, 0));
-        yvalues.add(new Entry(36f, 1));
-        yvalues.add(new Entry(12f, 2));
+        yvalues.add(new Entry(37f, 0));
+        yvalues.add(new Entry(19f, 1));
+        yvalues.add(new Entry(10f, 2));
 
 
         PieDataSet dataSet = new PieDataSet(yvalues, "");
